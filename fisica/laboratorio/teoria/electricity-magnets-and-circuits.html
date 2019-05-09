@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:esi="http://java.sun.com/JSP/Page" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Electricity, Magnets &amp; Circuits - PhET Simulations</title>
+    
+    
+    <link rel="stylesheet" type="text/css" href="/css/phet-v69-min.css"/>
+
+    <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min-4.7.css">
+  <!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="/css/ie6fix-v3.css"/>
+    <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="/css/ie7fix-v2.css"/>
+    <![endif]-->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8fix-v1.css"/>
+    <![endif]-->
+    <!--[if lt IE 7]>
+    <script defer type="text/javascript" src="/js/pngfix.js"></script>
+    <![endif]-->
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="/css/ie-v1.css"/>
+    <![endif]-->
+    <!-- class edu.colorado.phet.website.content.simulations.CategoryPage -->
+    <!-- host phet.colorado.edu -->
+    <script type="text/javascript">
+        //<![CDATA[
+        var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-5033201-1"]);_gaq.push(["_setDomainName","phet.colorado.edu"]);_gaq.push(["_trackPageview"]);_gaq.push(["_trackPageLoadTime"]);var benchmarkTracker=null;
+        (function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";a.onload=a.onreadystatechange=function(){var a=this.readyState;a&&"complete"!=a&&"loaded"!=a||(benchmarkTracker=_gat._getTracker("UA-5033201-1"),benchmarkTracker._setDomainName("phet.colorado.edu"))};var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();
+        (function(){(function(a,b,f,g,c,d,e){a.GoogleAnalyticsObject=c;a[c]=a[c]||function(){(a[c].q=a[c].q||[]).push(arguments)};a[c].l=1*new Date;d=b.createElement(f);e=b.getElementsByTagName(f)[0];d.async=1;d.src=g;e.parentNode.insertBefore(d,e)})(window,document,"script","//www.google-analytics.com/analytics.js","hewlettOERTracker");hewlettOERTracker("create","UA-5033010-35","phet.colorado.edu");hewlettOERTracker("send","pageview")})();
+        //]]>
+    </script>
+    <script type="text/javascript" src="https://phet.colorado.edu/js/phet-v42-min.js" async="true"></script>
+    
+
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+  
+        <link rel="canonical" href="https://phet.colorado.edu/en/simulations/category/physics/electricity-magnets-and-circuits"/>
+    
+        <meta property="og:site_name" content="PhET"/><meta property="twitter:site" content="@PhETsims"/><meta property="og:title" content="PhET Interactive Simulations"/><meta property="twitter:title" content="PhET Interactive Simulations"/><meta property="og:url" content="https://phet.colorado.edu/en/simulations/category/physics/electricity-magnets-and-circuits"/><meta property="twitter:card" content="summary"/><meta property="og:image" content="https://phet.colorado.edu/images/phet-social-media-logo.png"/><meta property="twitter:image" content="https://phet.colorado.edu/images/phet-social-media-logo.png"/><meta property="og:description" content="Founded in 2002 by Nobel Laureate Carl Wieman, the PhET Interactive Simulations project at the University of Colorado Boulder creates free interactive math and science simulations. PhET sims are based on extensive education <a {0}>research</a> and engage students through an intuitive, game-like environment where students learn through exploration and discovery."/><meta property="twitter:description" content="Founded in 2002 by Nobel Laureate Carl Wieman, the PhET Interactive Simulations project at the University of Colorado Boulder creates free interactive math and science simulations. PhET sims are based on extensive education <a {0}>research</a> and engage students through an intuitive, game-like environment where students learn through exploration and discovery."/>
+    
+        <script type="text/javascript">var phetLocale = "en";var phetSimulationString = "{0} (simulation)";</script>
+    
+    <link rel="stylesheet" href="/footer.css">
+  
+    <style id="edu-colorado-phet-website-panels-PromotionPanel-0">
+      div.ipad-banner h2 {
+        color: #f08621;
+        font-size: 36px;
+        font-weight: 100;
+        margin: 0;
+      }
+
+      div.ipad-banner h1 {
+        color: #f08621;
+        font-size: 78px;
+        font-weight: 100;
+        margin: 0 0 10px 0;
+        margin-top: -13px;
+      }
+
+      div.ipad-banner div {
+        display: inline-block;
+      }
+
+      div.ipad-banner {
+        margin-bottom: 10px;
+      }
+
+      div.ipad-banner ul {
+        margin-top: 0;
+      }
+
+      div.ipad-banner li {
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: #333;
+      }
+    </style>
+  </head>
+<body dir="ltr" class="ltr" id="other-body">
+<div id="skipNav">
+    <a href="#main-content" accesskey="0" id="skipper" class="white-focus" tabindex="1">
+        Skip to Main Content
+    </a>
+</div>
+
+
+
+
+
+<div id="page-header" class="ltr">
+    <div class="log-in-out" style="z-index: 1000;">
+      <div xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+  
+    <a class="phet-button sign-in-button white-focus" id="login-button" href="#">
+      Sign In
+    </a>
+    <a class="phet-button register-button white-focus" href="https://phet.colorado.edu/en/register?dest=%2Fen%2Fsimulations%2Fcategory%2Fphysics%2Felectricity-magnets-and-circuits">
+      Register
+    </a>
+  
+  
+
+  <div id="login-form" style="display: none;">
+
+    <div class="login-form-header" id="button-sign-in">
+      Sign In
+    </div>
+    <div class="login-form-header" style="display: none;" id="access-sign-in">
+      Please Sign In to Access
+    </div>
+
+    <div id="login-validation-message" style="display: none">
+      An invalid email address and/or password has been entered.
+    </div>
+
+    <form id="id1" method="post" action="https://phet.colorado.edu/../?wicket:bookmarkablePage=:edu.colorado.phet.website.authentication.LoginFormHandlerPage"><div style="width:0px;height:0px;position:absolute;left:-100px;top:-100px;overflow:hidden"><input type="hidden" name="id1_hf_0" id="id1_hf_0" /></div>
+
+      <input type="text" name="destination" id="destinationURL" style="display: none;" value=""><br/>
+      <input type="text" name="source" id="sourceURL" style="display: none;" value=""><br/>
+      <label class="bold-label" for="login-email-entry">
+        Email address
+      </label><br/>
+      <input id="login-email-entry" type="text" name="username" class="login-form-text" value=""><br/>
+      <label class="bold-label" for="password">
+        Password
+      </label><br/>
+      <input type="password" name="password" id="password" class="login-form-text" value=""><br/>
+
+        <span>
+          <input id="sign-in-checkbox" type="checkbox" name="remember:remember-check" checked="checked">
+          <label for="sign-in-checkbox">Remember me</label>
+          <a class="no-underline opposite-float" href="/en/reset-password-request" id="remember-me">Forgot password?</a>
+        </span>
+
+      <br/>
+
+      <input type="submit" value="SIGN IN" class="phet-button login-form-submit"><br/>
+
+        <span>
+          No account? <a class="no-underline" href="https://phet.colorado.edu/en/register?dest=%2F">Register</a>.
+        </span>
+
+        <span>
+          <a href="/en/resend-email-confirmation" class="no-underline opposite-float">
+            Resend email confirmation
+          </a>
+        </span>
+
+    </form>
+
+  </div>
+
+  <div id="profileUpdateAsk" style="display: none;">
+    <div class="profile-update-img">
+      <img src="/images/Update_profile_popup.png"/>
+      <div class="profile-update-title">Time to update!</div>
+    </div>
+    <div class="profile-update-right">
+      <div class="profile-update-text">We are working to improve the usability of our website. To support this effort, please update your profile!</div>
+      <div id="profile-update-skip" class="phet-button">Skip for now</div>
+      <a href="/en/edit-profile?dest=%2Fen%2Fsimulations%2Fcategory%2Fphysics%2Felectricity-magnets-and-circuits">
+        <div class="profile-update-link phet-button ">Update Profile</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+    <div id="page-header-container">
+        <a href="/" class="header-logo-image white-focus" tabindex="2">
+            <img src="/images/phet-logo-trademarked.svg" alt="PhET Home Page" title="Go to the PhET home page" style="border: none;" width="156" height="74" id="phet-logo-main-image"/>
+        </a>
+        <div id="page-header-cu">
+            <a tabindex="3" href="http://www.colorado.edu" target="_blank" class="white-focus" style="display: inline-block; color: white">
+              <img src="/images/logos/cu-logo-grayscale.svg" alt="University of Colorado" width="195" height="40" style="border: none;"/>
+            </a>
+        </div>
+        <div id="page-header-search">
+    <form method="get" id="search-form" class="autocompleteOff" action="/en/search">
+        <div>
+            <label for="search-text-id" class="hidden">
+                Search the PhET Website
+            </label>
+            <div class="search-box">
+                <input type="text" size="15" name="q" class="always-enabled acInput orange-focus" id="search-text-id"/>
+            </div>
+            <button type="submit" form="search-form" id="search-submit" class="phet-button sign-in-button always-enabled autocompleteOff" title="Click here to search the PhET website">
+                <img id="magnifying-glass" src="/images/icons/search-icon.png" alt="Search"/>
+            </button>
+        </div>
+    </form>
+</div>
+    </div>
+</div>
+<div id="page-content" class="ltr">
+    
+  <div class="menu-page-content" style="width: 820px;">
+    <div id="side-panel">
+      <div>
+    <div class="side-nav">
+        <div>
+    
+        <ul class="nav-ul" dir="ltr">
+            <li class="nav-li">
+                <div class="link-holder">
+                    <a href="/en/simulations/category/new" class="nml-link nav0" id="nav-location-nav-simulations">
+                        <span class="nml-link-label selected">Simulations</span>
+                    </a>
+                    
+    
+        <ul class="nav-ul" dir="ltr">
+            <li class="nav-li">
+                <div class="link-holder">
+                    <a href="/en/simulations/category/new" class="nml-link nav1" id="nav-location-nav-new">
+                        <span class="nml-link-label">New Sims</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="/en/simulations/category/html" class="nml-link nav1" id="nav-location-nav-html">
+                        <span class="nml-link-label">HTML5</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="/en/simulations/category/physics" class="nml-link nav1" id="nav-location-nav-physics">
+                        <span class="nml-link-label">Physics</span>
+                    </a>
+                    
+    
+        <ul class="nav-ul" dir="ltr">
+            <li class="nav-li">
+                <div class="link-holder">
+                    <a href="/en/simulations/category/physics/motion" class="nml-link nav2" id="nav-location-nav-motion">
+                        <span class="nml-link-label">Motion</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="/en/simulations/category/physics/sound-and-waves" class="nml-link nav2" id="nav-location-nav-sound-and-waves">
+                        <span class="nml-link-label">Sound &amp; Waves</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="/en/simulations/category/physics/work-energy-and-power" class="nml-link nav2" id="nav-location-nav-work-energy-and-power">
+                        <span class="nml-link-label">Work, Energy &amp; Power</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="/en/simulations/category/physics/heat-and-thermodynamics" class="nml-link nav2" id="nav-location-nav-heat-and-thermodynamics">
+                        <span class="nml-link-label">Heat &amp; Thermo</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="/en/simulations/category/physics/quantum-phenomena" class="nml-link nav2" id="nav-location-nav-quantum-phenomena">
+                        <span class="nml-link-label">Quantum Phenomena</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="/en/simulations/category/physics/light-and-radiation" class="nml-link nav2" id="nav-location-nav-light-and-radiation">
+                        <span class="nml-link-label">Light &amp; Radiation</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="/en/simulations/category/physics/electricity-magnets-and-circuits" class="nml-link nav2" id="nav-location-nav-electricity-magnets-and-circuits">
+                        <span class="nml-link-label selected">Electricity, Magnets &amp; Circuits</span>
+                    </a>
+                    
+                </div>
+            </li>
+        </ul>
+    
+
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="/en/simulations/category/biology" class="nml-link nav1" id="nav-location-nav-biology">
+                        <span class="nml-link-label">Biology</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="/en/simulations/category/chemistry" class="nml-link nav1" id="nav-location-nav-chemistry">
+                        <span class="nml-link-label">Chemistry</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="/en/simulations/category/earth-science" class="nml-link nav1" id="nav-location-nav-earth-science">
+                        <span class="nml-link-label">Earth Science</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="/en/simulations/category/math" class="nml-link nav1" id="nav-location-nav-math">
+                        <span class="nml-link-label">Math</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="/en/simulations/category/by-level" class="nml-link nav1" id="nav-location-nav-by-level">
+                        <span class="nml-link-label">By Grade Level</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="/en/simulations/category/by-device" class="nml-link nav1" id="nav-location-nav-by-device">
+                        <span class="nml-link-label">By Device</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="/en/simulations" class="nml-link nav1" id="nav-location-nav-all">
+                        <span class="nml-link-label">All Sims</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="/en/simulations/translated" class="nml-link nav1" id="nav-location-nav-simulations-translated">
+                        <span class="nml-link-label">Translated Sims</span>
+                    </a>
+                    
+                </div>
+            </li>
+        </ul>
+    
+
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="/en/teaching-resources" class="nml-link nav0" id="nav-location-nav-teacherIdeas">
+                        <span class="nml-link-label teacher-ideas-item">Teaching Resources</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="/en/research" class="nml-link nav0" id="nav-location-nav-research">
+                        <span class="nml-link-label">Research</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="/en/accessibility" class="nml-link nav0" id="nav-location-nav-accessibility">
+                        <span class="nml-link-label">Accessibility</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="/en/donate" class="nml-link nav0" id="nav-location-nav-donate">
+                        <span class="nml-link-label">Donate</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    
+                    
+                </div>
+            </li>
+        </ul>
+    
+</div>
+    </div>
+</div>
+    </div>
+    <div id="main-content" class="main-menu-content">
+      
+      
+    <div>
+        
+        
+    <div>
+  
+
+  
+</div>
+    <div dir="ltr">
+  <div dir="ltr">
+    <table style="margin: 5px; border: none; padding: 0; width: 500px;" cellpadding="0" cellspacing="0">
+      <tr>
+        <td class="text-left-classic">
+          
+        </td>
+        <td class="text-right-classic">
+          <div class="toggle-index-category">
+            <span>
+              <a href="#" title="Thumbnail View" style="color: black;"><i class="fa fa-th" style="font-size: 18px"></i></a>
+            </span>
+            <span>
+              <a href="/en/simulations/category/physics/electricity-magnets-and-circuits/index" title="List View" style="color: grey;"><i class="fa fa-list" style="font-size: 18px"></i></a>
+            </span>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <div style="width: 518px;"><div dir="ltr">
+    <div dir="ltr">
+        <table>
+            <tr>
+                <td class="simulation-list-item">
+                    <a href="/en/simulation/coulombs-law" class="simulation-link">
+                      <img class="new-ribbon" src="/images/icons/sim-badges/new.png" alt="new-ribbon" width="45" height="51"/>
+                      <img class="simulation-list-thumbnail" src="https://phet-downloads.colorado.edu/sims/html/coulombs-law/latest/coulombs-law-128.png" id="simulation-display-thumbnail-coulombs-law" alt="Screenshot of the simulation Coulomb&#39;s Law" width="128" height="84"/><br/>
+                        <strong><span class="simulation-list-title">Coulomb&#039;s Law</span></strong><br/>
+                        <span class="sim-display-badge sim-badge-html"></span>
+                    </a>
+                </td><td class="simulation-list-item">
+                    <a href="/en/simulation/capacitor-lab-basics" class="simulation-link">
+                      
+                      <img class="simulation-list-thumbnail" src="https://phet-downloads.colorado.edu/sims/html/capacitor-lab-basics/latest/capacitor-lab-basics-128.png" id="simulation-display-thumbnail-capacitor-lab-basics" alt="Screenshot of the simulation Capacitor Lab: Basics" width="128" height="84"/><br/>
+                        <strong><span class="simulation-list-title">Capacitor Lab: Basics</span></strong><br/>
+                        <span class="sim-display-badge sim-badge-html"></span>
+                    </a>
+                </td><td class="simulation-list-item">
+                    <a href="/en/simulation/circuit-construction-kit-dc-virtual-lab" class="simulation-link">
+                      
+                      <img class="simulation-list-thumbnail" src="https://phet-downloads.colorado.edu/sims/html/circuit-construction-kit-dc-virtual-lab/latest/circuit-construction-kit-dc-virtual-lab-128.png" id="simulation-display-thumbnail-circuit-construction-kit-dc-virtual-lab" alt="Screenshot of the simulation Circuit Construction Kit: DC - Virtual Lab" width="128" height="84"/><br/>
+                        <strong><span class="simulation-list-title">Circuit Construction Kit: DC - Virtual Lab</span></strong><br/>
+                        <span class="sim-display-badge sim-badge-html"></span>
+                    </a>
+                </td>
+            </tr><tr>
+                <td class="simulation-list-item">
+                    <a href="/en/simulation/circuit-construction-kit-dc" class="simulation-link">
+                      
+                      <img class="simulation-list-thumbnail" src="https://phet-downloads.colorado.edu/sims/html/circuit-construction-kit-dc/latest/circuit-construction-kit-dc-128.png" id="simulation-display-thumbnail-circuit-construction-kit-dc" alt="Screenshot of the simulation Circuit Construction Kit: DC" width="128" height="84"/><br/>
+                        <strong><span class="simulation-list-title">Circuit Construction Kit: DC</span></strong><br/>
+                        <span class="sim-display-badge sim-badge-html"></span>
+                    </a>
+                </td><td class="simulation-list-item">
+                    <a href="/en/simulation/charges-and-fields" class="simulation-link">
+                      
+                      <img class="simulation-list-thumbnail" src="https://phet-downloads.colorado.edu/sims/html/charges-and-fields/latest/charges-and-fields-128.png" id="simulation-display-thumbnail-charges-and-fields" alt="Screenshot of the simulation Charges And Fields" width="128" height="84"/><br/>
+                        <strong><span class="simulation-list-title">Charges And Fields</span></strong><br/>
+                        <span class="sim-display-badge sim-badge-html"></span>
+                    </a>
+                </td><td class="simulation-list-item">
+                    <a href="/en/simulation/balloons-and-static-electricity" class="simulation-link">
+                      
+                      <img class="simulation-list-thumbnail" src="https://phet-downloads.colorado.edu/sims/html/balloons-and-static-electricity/latest/balloons-and-static-electricity-128.png" id="simulation-display-thumbnail-balloons-and-static-electricity" alt="Screenshot of the simulation Balloons and Static Electricity" width="128" height="84"/><br/>
+                        <strong><span class="simulation-list-title">Balloons and Static Electricity</span></strong><br/>
+                        <span class="sim-display-badge sim-badge-html"></span>
+                    </a>
+                </td>
+            </tr><tr>
+                <td class="simulation-list-item">
+                    <a href="/en/simulation/legacy/capacitor-lab" class="simulation-link">
+                      
+                      <img class="simulation-list-thumbnail" src="https://phet-downloads.colorado.edu/sims/capacitor-lab/capacitor-lab-128.png" id="simulation-display-thumbnail-capacitor-lab" alt="Screenshot of the simulation Capacitor Lab" width="128" height="84"/><br/>
+                        <strong><span class="simulation-list-title">Capacitor Lab</span></strong><br/>
+                        <span class="sim-display-badge sim-badge-java"></span>
+                    </a>
+                </td><td class="simulation-list-item">
+                    <a href="/en/simulation/legacy/circuit-construction-kit-ac" class="simulation-link">
+                      
+                      <img class="simulation-list-thumbnail" src="https://phet-downloads.colorado.edu/sims/circuit-construction-kit/circuit-construction-kit-ac-128.png" id="simulation-display-thumbnail-circuit-construction-kit-ac" alt="Screenshot of the simulation Circuit Construction Kit (AC+DC)" width="128" height="84"/><br/>
+                        <strong><span class="simulation-list-title">Circuit Construction Kit (AC+DC)</span></strong><br/>
+                        <span class="sim-display-badge sim-badge-java"></span>
+                    </a>
+                </td><td class="simulation-list-item">
+                    <a href="/en/simulation/legacy/magnet-and-compass" class="simulation-link">
+                      
+                      <img class="simulation-list-thumbnail" src="https://phet-downloads.colorado.edu/sims/faraday/magnet-and-compass-128.png" id="simulation-display-thumbnail-magnet-and-compass" alt="Screenshot of the simulation Magnet and Compass" width="128" height="84"/><br/>
+                        <strong><span class="simulation-list-title">Magnet and Compass</span></strong><br/>
+                        <span class="sim-display-badge sim-badge-java"></span>
+                    </a>
+                </td>
+            </tr><tr>
+                <td class="simulation-list-item">
+                    <a href="/en/simulation/legacy/magnets-and-electromagnets" class="simulation-link">
+                      
+                      <img class="simulation-list-thumbnail" src="https://phet-downloads.colorado.edu/sims/faraday/magnets-and-electromagnets-128.png" id="simulation-display-thumbnail-magnets-and-electromagnets" alt="Screenshot of the simulation Magnets and Electromagnets" width="128" height="84"/><br/>
+                        <strong><span class="simulation-list-title">Magnets and Electromagnets</span></strong><br/>
+                        <span class="sim-display-badge sim-badge-java"></span>
+                    </a>
+                </td><td class="simulation-list-item">
+                    <a href="/en/simulation/legacy/generator" class="simulation-link">
+                      
+                      <img class="simulation-list-thumbnail" src="https://phet-downloads.colorado.edu/sims/faraday/generator-128.png" id="simulation-display-thumbnail-generator" alt="Screenshot of the simulation Generator" width="128" height="84"/><br/>
+                        <strong><span class="simulation-list-title">Generator</span></strong><br/>
+                        <span class="sim-display-badge sim-badge-java"></span>
+                    </a>
+                </td><td class="simulation-list-item">
+                    <a href="/en/simulation/legacy/electric-hockey" class="simulation-link">
+                      
+                      <img class="simulation-list-thumbnail" src="https://phet-downloads.colorado.edu/sims/electric-hockey/electric-hockey-128.png" id="simulation-display-thumbnail-electric-hockey" alt="Screenshot of the simulation Electric Field Hockey" width="128" height="84"/><br/>
+                        <strong><span class="simulation-list-title">Electric Field Hockey</span></strong><br/>
+                        <span class="sim-display-badge sim-badge-java"></span>
+                    </a>
+                </td>
+            </tr><tr>
+                <td class="simulation-list-item">
+                    <a href="/en/simulation/legacy/faraday" class="simulation-link">
+                      
+                      <img class="simulation-list-thumbnail" src="https://phet-downloads.colorado.edu/sims/faraday/faraday-thumbnail.png" id="simulation-display-thumbnail-faraday" alt="Screenshot of the simulation Faraday&#39;s Electromagnetic Lab" width="128" height="84"/><br/>
+                        <strong><span class="simulation-list-title">Faraday&#039;s Electromagnetic Lab</span></strong><br/>
+                        <span class="sim-display-badge sim-badge-java"></span>
+                    </a>
+                </td><td class="simulation-list-item">
+                    <a href="/en/simulation/faradays-law" class="simulation-link">
+                      
+                      <img class="simulation-list-thumbnail" src="https://phet-downloads.colorado.edu/sims/html/faradays-law/latest/faradays-law-128.png" id="simulation-display-thumbnail-faradays-law" alt="Screenshot of the simulation Faraday&#39;s Law" width="128" height="84"/><br/>
+                        <strong><span class="simulation-list-title">Faraday&#039;s Law</span></strong><br/>
+                        <span class="sim-display-badge sim-badge-html"></span>
+                    </a>
+                </td><td class="simulation-list-item">
+                    <a href="/en/simulation/john-travoltage" class="simulation-link">
+                      
+                      <img class="simulation-list-thumbnail" src="https://phet-downloads.colorado.edu/sims/html/john-travoltage/latest/john-travoltage-128.png" id="simulation-display-thumbnail-john-travoltage" alt="Screenshot of the simulation John Travoltage" width="128" height="84"/><br/>
+                        <strong><span class="simulation-list-title">John Travoltage</span></strong><br/>
+                        <span class="sim-display-badge sim-badge-html"></span>
+                    </a>
+                </td>
+            </tr><tr>
+                <td class="simulation-list-item">
+                    <a href="/en/simulation/legacy/radio-waves" class="simulation-link">
+                      
+                      <img class="simulation-list-thumbnail" src="https://phet-downloads.colorado.edu/sims/radio-waves/radio-waves-128.png" id="simulation-display-thumbnail-radio-waves" alt="Screenshot of the simulation Radio Waves &amp; Electromagnetic Fields" width="128" height="84"/><br/>
+                        <strong><span class="simulation-list-title">Radio Waves &amp; Electromagnetic Fields</span></strong><br/>
+                        <span class="sim-display-badge sim-badge-java"></span>
+                    </a>
+                </td><td class="simulation-list-item">
+                    <a href="/en/simulation/ohms-law" class="simulation-link">
+                      
+                      <img class="simulation-list-thumbnail" src="https://phet-downloads.colorado.edu/sims/html/ohms-law/latest/ohms-law-128.png" id="simulation-display-thumbnail-ohms-law" alt="Screenshot of the simulation Ohm&#39;s Law" width="128" height="84"/><br/>
+                        <strong><span class="simulation-list-title">Ohm&#039;s Law</span></strong><br/>
+                        <span class="sim-display-badge sim-badge-html"></span>
+                    </a>
+                </td><td class="simulation-list-item">
+                    <a href="/en/simulation/legacy/battery-voltage" class="simulation-link">
+                      
+                      <img class="simulation-list-thumbnail" src="https://phet-downloads.colorado.edu/sims/battery-voltage/battery-voltage-128.png" id="simulation-display-thumbnail-battery-voltage" alt="Screenshot of the simulation Battery Voltage" width="128" height="84"/><br/>
+                        <strong><span class="simulation-list-title">Battery Voltage</span></strong><br/>
+                        <span class="sim-display-badge sim-badge-java"></span>
+                    </a>
+                </td>
+            </tr><tr>
+                <td class="simulation-list-item">
+                    <a href="/en/simulation/legacy/battery-resistor-circuit" class="simulation-link">
+                      
+                      <img class="simulation-list-thumbnail" src="https://phet-downloads.colorado.edu/sims/battery-resistor-circuit/battery-resistor-circuit-128.png" id="simulation-display-thumbnail-battery-resistor-circuit" alt="Screenshot of the simulation Battery-Resistor Circuit" width="128" height="84"/><br/>
+                        <strong><span class="simulation-list-title">Battery-Resistor Circuit</span></strong><br/>
+                        <span class="sim-display-badge sim-badge-java"></span>
+                    </a>
+                </td><td class="simulation-list-item">
+                    <a href="/en/simulation/legacy/efield" class="simulation-link">
+                      
+                      <img class="simulation-list-thumbnail" src="https://phet-downloads.colorado.edu/sims/efield/efield-128.png" id="simulation-display-thumbnail-efield" alt="Screenshot of the simulation Electric Field of Dreams" width="128" height="84"/><br/>
+                        <strong><span class="simulation-list-title">Electric Field of Dreams</span></strong><br/>
+                        <span class="sim-display-badge sim-badge-java"></span>
+                    </a>
+                </td><td class="simulation-list-item">
+                    <a href="/en/simulation/resistance-in-a-wire" class="simulation-link">
+                      
+                      <img class="simulation-list-thumbnail" src="https://phet-downloads.colorado.edu/sims/html/resistance-in-a-wire/latest/resistance-in-a-wire-128.png" id="simulation-display-thumbnail-resistance-in-a-wire" alt="Screenshot of the simulation Resistance in a Wire" width="128" height="84"/><br/>
+                        <strong><span class="simulation-list-title">Resistance in a Wire</span></strong><br/>
+                        <span class="sim-display-badge sim-badge-html"></span>
+                    </a>
+                </td>
+            </tr><tr>
+                <td class="simulation-list-item">
+                    <a href="/en/simulation/legacy/conductivity" class="simulation-link">
+                      
+                      <img class="simulation-list-thumbnail" src="https://phet-downloads.colorado.edu/sims/conductivity/conductivity-128.png" id="simulation-display-thumbnail-conductivity" alt="Screenshot of the simulation Conductivity" width="128" height="84"/><br/>
+                        <strong><span class="simulation-list-title">Conductivity</span></strong><br/>
+                        <span class="sim-display-badge sim-badge-java"></span>
+                    </a>
+                </td><td class="simulation-list-item">
+                    <a href="/en/simulation/legacy/semiconductor" class="simulation-link">
+                      
+                      <img class="simulation-list-thumbnail" src="https://phet-downloads.colorado.edu/sims/semiconductor/semiconductor-128.png" id="simulation-display-thumbnail-semiconductor" alt="Screenshot of the simulation Semiconductors" width="128" height="84"/><br/>
+                        <strong><span class="simulation-list-title">Semiconductors</span></strong><br/>
+                        <span class="sim-display-badge sim-badge-java"></span>
+                    </a>
+                </td><td class="simulation-list-item">
+                    <a href="/en/simulation/legacy/circuit-construction-kit-ac-virtual-lab" class="simulation-link">
+                      
+                      <img class="simulation-list-thumbnail" src="https://phet-downloads.colorado.edu/sims/circuit-construction-kit/circuit-construction-kit-ac-virtual-lab-128.png" id="simulation-display-thumbnail-circuit-construction-kit-ac-virtual-lab" alt="Screenshot of the simulation Circuit Construction Kit (AC+DC), Virtual Lab" width="128" height="84"/><br/>
+                        <strong><span class="simulation-list-title">Circuit Construction Kit (AC+DC), Virtual Lab</span></strong><br/>
+                        <span class="sim-display-badge sim-badge-java"></span>
+                    </a>
+                </td>
+            </tr><tr>
+                <td class="simulation-list-item">
+                    <a href="/en/simulation/legacy/signal-circuit" class="simulation-link">
+                      
+                      <img class="simulation-list-thumbnail" src="https://phet-downloads.colorado.edu/sims/signal-circuit/signal-circuit-128.png" id="simulation-display-thumbnail-signal-circuit" alt="Screenshot of the simulation Signal Circuit" width="128" height="84"/><br/>
+                        <strong><span class="simulation-list-title">Signal Circuit</span></strong><br/>
+                        <span class="sim-display-badge sim-badge-java"></span>
+                    </a>
+                </td>
+            </tr>
+        </table>
+        <br/>
+    </div>
+</div></div>
+  </div>
+</div>
+
+        
+    </div>
+
+      
+    </div>
+  </div>
+  <div>
+  <div class="main-footer">
+    <div>
+  
+    <hr>
+    <div style="padding: 10px 0; display: inline-block" dir="ltr">
+      <span>
+        <a class="footer-link" href="http://www.facebook.com/pages/PhET-Interactive-Simulations/161503243888932?v=wall" rel="external nofollow" title="Like us on Facebook" dir="ltr">
+          <i class="fa fa-facebook"></i>
+        </a>
+      </span><span>
+        <a class="footer-link" href="http://twitter.com/PhETSims" rel="external nofollow" title="Follow us on Twitter" dir="ltr">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </span><span>
+        <a class="footer-link" href="https://www.instagram.com/phetsims/" rel="external nofollow" title="Follow us on Instagram" dir="ltr">
+          <i class="fa fa-instagram"></i>
+        </a>
+      </span><span>
+        <a class="footer-link" href="https://www.youtube.com/channel/UCMRZ0-ci4ifGBF1bJvrcDRQ" rel="external nofollow" title="Watch us on Youtube" dir="ltr">
+          <i class="fa fa-youtube-play"></i>
+        </a>
+      </span><span>
+        <a class="footer-link" href="http://www.pinterest.com/PhETSims" rel="external nofollow" title="Pin us on Pinterest" dir="ltr">
+          <i class="fa fa-pinterest-p"></i>
+        </a>
+      </span>
+    </div>
+    <hr>
+  
+</div>
+    <div id="footer-nav-links">
+      <div>
+        <a href="/en/about"><span>About PhET</span></a>
+        <a href="/en/about/team"><span>Our Team</span></a>
+        <a href="/en/about/sponsors"><span>Sponsors</span></a>
+      </div>
+      <div>
+        <a href="/en/offline-access"><span>Offline Access</span></a>
+        <a href="/en/help-center/getting-started"><span>Help Center</span></a>
+        <a href="/en/about/contact"><span>Contact</span></a>
+      </div>
+      <div>
+        <a href="/en/about/source-code"><span>Source Code</span></a>
+        <a href="/en/licensing"><span>Licensing</span></a>
+        <a href="/en/for-translators"><span>For Translators</span></a>
+      </div>
+    </div>
+    <div class="other-languages">
+      <div class="translation-links">
+  
+    <span class="globe"><i class="fa fa-globe"></i></span>
+
+    <select id="translation-links" name="footer:translation-links:translation-links">
+<option selected="selected" value="">Choose One</option>
+<option value="en">English</option>
+<option value="ar_SA">العربية (السعودية)</option>
+<option value="eu">Basque</option>
+<option value="be">беларускі</option>
+<option value="bs">Bosnian</option>
+<option value="zh_CN">中文 (中国)</option>
+<option value="zh_TW">中文 (台灣)</option>
+<option value="cs">čeština</option>
+<option value="da">Dansk</option>
+<option value="nl">Nederlands</option>
+<option value="et">Eesti</option>
+<option value="fi">suomi</option>
+<option value="fr">français</option>
+<option value="gl">Gallegan</option>
+<option value="ka">Georgian</option>
+<option value="de">Deutsch</option>
+<option value="el">Ελληνικά</option>
+<option value="hu">magyar</option>
+<option value="in">Bahasa Indonesia</option>
+<option value="it">italiano</option>
+<option value="ja">日本語</option>
+<option value="ko">한국어</option>
+<option value="ku">Kurdish</option>
+<option value="ku_TR">Kurdish (Turkey)</option>
+<option value="mk">македонски</option>
+<option value="mr">Marathi</option>
+<option value="mn">Mongolian</option>
+<option value="nb">Norwegian Bokmål</option>
+<option value="nn">Norwegian Nynorsk</option>
+<option value="fa">Persian</option>
+<option value="pt">português</option>
+<option value="pt_BR">português (Brasil)</option>
+<option value="ro">română</option>
+<option value="sr">Српски</option>
+<option value="si">Sinhalese</option>
+<option value="sk">Slovenčina</option>
+<option value="es">español</option>
+<option value="es_MX">español (México)</option>
+<option value="es_PE">español (Perú)</option>
+<option value="th">ไทย</option>
+<option value="tr">Türkçe</option>
+<option value="uk">українська</option>
+<option value="vi">Tiếng Việt</option>
+</select>
+
+    <script type="text/javascript">
+      var translationLinks = document.getElementById( 'translation-links' );
+
+      translationLinks.addEventListener( "change", function() {
+        parent.postMessage( JSON.stringify( { switchLocale: translationLinks.value } ), parent.location.origin );
+        if ( window.location.pathname.includes( '/index.html' ) ) {
+          window.location = window.location.pathname.replace( '/index.html', '/' + translationLinks.value + '/' );
+        }
+        else if ( window.location.pathname === '/' ) {
+          window.location = '/' + translationLinks.value + '/';
+        }
+        else {
+          window.location = window.location.pathname.replace( '/' + document.getElementById( 'locale' ).getAttribute( 'locale' ) + '/', '/' + translationLinks.value + '/' );
+        }
+      } );
+    </script>
+  
+
+  <span style="display: none;">
+      <a href="/en/simulations/category/physics/electricity-magnets-and-circuits"><span class="current-locale">English</span></a>
+  </span><span style="display: none;">
+      <a href="/ar_SA/simulations/category/physics/electricity-magnets-and-circuits"><span>العربية</span></a>
+  </span><span style="display: none;">
+      <a href="/eu/simulations/category/physics/electricity-magnets-and-circuits"><span>Euskara</span></a>
+  </span><span style="display: none;">
+      <a href="/be/simulations/category/physics/electricity-magnets-and-circuits"><span>Беларуская</span></a>
+  </span><span style="display: none;">
+      <a href="/bs/simulations/category/physics/electricity-magnets-and-circuits"><span>Bosanski</span></a>
+  </span><span style="display: none;">
+      <a href="/zh_CN/simulations/category/physics/electricity-magnets-and-circuits"><span>简体中文</span></a>
+  </span><span style="display: none;">
+      <a href="/zh_TW/simulations/category/physics/electricity-magnets-and-circuits"><span>正體中文</span></a>
+  </span><span style="display: none;">
+      <a href="/cs/simulations/category/physics/electricity-magnets-and-circuits"><span>Česky</span></a>
+  </span><span style="display: none;">
+      <a href="/da/simulations/category/physics/electricity-magnets-and-circuits"><span>Dansk</span></a>
+  </span><span style="display: none;">
+      <a href="/nl/simulations/category/physics/electricity-magnets-and-circuits"><span>Nederlands</span></a>
+  </span><span style="display: none;">
+      <a href="/et/simulations/category/physics/electricity-magnets-and-circuits"><span>Eesti</span></a>
+  </span><span style="display: none;">
+      <a href="/fi/simulations/category/physics/electricity-magnets-and-circuits"><span>Suomi</span></a>
+  </span><span style="display: none;">
+      <a href="/fr/simulations/category/physics/electricity-magnets-and-circuits"><span>Français</span></a>
+  </span><span style="display: none;">
+      <a href="/gl/simulations/category/physics/electricity-magnets-and-circuits"><span>Galego</span></a>
+  </span><span style="display: none;">
+      <a href="/ka/simulations/category/physics/electricity-magnets-and-circuits"><span>ქართული</span></a>
+  </span><span style="display: none;">
+      <a href="/de/simulations/category/physics/electricity-magnets-and-circuits"><span>Deutsch</span></a>
+  </span><span style="display: none;">
+      <a href="/el/simulations/category/physics/electricity-magnets-and-circuits"><span>Ελληνικά</span></a>
+  </span><span style="display: none;">
+      <a href="/hu/simulations/category/physics/electricity-magnets-and-circuits"><span>Magyar</span></a>
+  </span><span style="display: none;">
+      <a href="/in/simulations/category/physics/electricity-magnets-and-circuits"><span>Bahasa Indonesia</span></a>
+  </span><span style="display: none;">
+      <a href="/it/simulations/category/physics/electricity-magnets-and-circuits"><span>Italiano</span></a>
+  </span><span style="display: none;">
+      <a href="/ja/simulations/category/physics/electricity-magnets-and-circuits"><span>日本語</span></a>
+  </span><span style="display: none;">
+      <a href="/ko/simulations/category/physics/electricity-magnets-and-circuits"><span>한국어</span></a>
+  </span><span style="display: none;">
+      <a href="/ku/simulations/category/physics/electricity-magnets-and-circuits"><span>كوردي</span></a>
+  </span><span style="display: none;">
+      <a href="/ku_TR/simulations/category/physics/electricity-magnets-and-circuits"><span>Kurdî</span></a>
+  </span><span style="display: none;">
+      <a href="/mk/simulations/category/physics/electricity-magnets-and-circuits"><span>Македонски</span></a>
+  </span><span style="display: none;">
+      <a href="/mr/simulations/category/physics/electricity-magnets-and-circuits"><span>मराठी</span></a>
+  </span><span style="display: none;">
+      <a href="/mn/simulations/category/physics/electricity-magnets-and-circuits"><span>Монгол</span></a>
+  </span><span style="display: none;">
+      <a href="/nb/simulations/category/physics/electricity-magnets-and-circuits"><span>Norsk bokmål</span></a>
+  </span><span style="display: none;">
+      <a href="/nn/simulations/category/physics/electricity-magnets-and-circuits"><span>Norsk nynorsk</span></a>
+  </span><span style="display: none;">
+      <a href="/fa/simulations/category/physics/electricity-magnets-and-circuits"><span>فارسی</span></a>
+  </span><span style="display: none;">
+      <a href="/pt/simulations/category/physics/electricity-magnets-and-circuits"><span>Português</span></a>
+  </span><span style="display: none;">
+      <a href="/pt_BR/simulations/category/physics/electricity-magnets-and-circuits"><span>Português do Brasil</span></a>
+  </span><span style="display: none;">
+      <a href="/ro/simulations/category/physics/electricity-magnets-and-circuits"><span>Română</span></a>
+  </span><span style="display: none;">
+      <a href="/sr/simulations/category/physics/electricity-magnets-and-circuits"><span>Српски</span></a>
+  </span><span style="display: none;">
+      <a href="/si/simulations/category/physics/electricity-magnets-and-circuits"><span>සිංහල</span></a>
+  </span><span style="display: none;">
+      <a href="/sk/simulations/category/physics/electricity-magnets-and-circuits"><span>Slovensky</span></a>
+  </span><span style="display: none;">
+      <a href="/es/simulations/category/physics/electricity-magnets-and-circuits"><span>Español</span></a>
+  </span><span style="display: none;">
+      <a href="/es_MX/simulations/category/physics/electricity-magnets-and-circuits"><span>Español</span></a>
+  </span><span style="display: none;">
+      <a href="/es_PE/simulations/category/physics/electricity-magnets-and-circuits"><span>Español Internacional</span></a>
+  </span><span style="display: none;">
+      <a href="/th/simulations/category/physics/electricity-magnets-and-circuits"><span>ไทย</span></a>
+  </span><span style="display: none;">
+      <a href="/tr/simulations/category/physics/electricity-magnets-and-circuits"><span>Türkçe</span></a>
+  </span><span style="display: none;">
+      <a href="/uk/simulations/category/physics/electricity-magnets-and-circuits"><span>Українська</span></a>
+  </span><span style="display: none;">
+      <a href="/vi/simulations/category/physics/electricity-magnets-and-circuits"><span>Tiếng Việt</span></a>
+  </span>
+
+  <div style="display: none" id="locale" locale="en"></div>
+
+
+</div>
+      
+    </div>
+
+    <div id="app-badges">
+      <span>
+        <a href="https://itunes.apple.com/us/app/phet-simulations/id1134126831?ls=1&mt=8">
+          <img src="/images/Download_on_the_App_Store_Badge_US-UK_135x40.svg" style="width: 120px;"></a>
+      </span>
+      <span>
+        <a href="https://play.google.com/store/apps/details?id=edu.colorado.phet.android_app">
+          <img src="/images/play_store_badge.png" style="width: 120px;"></a>
+      </span>
+    </div>
+
+  </div>
+  <div class="footer-highlight-background">
+    <div class="footer-bottom">
+      <div class="left">
+        <table>
+          <tr>
+            <td class="sponsor">
+              <a href="http://www.hewlett.org/" rel="external" dir="ltr">
+                <img src="/images/support/Hewlett_logo_footer_vv.png"
+                     alt="Hewlett Foundation" width="100" />
+              </a>
+            </td>
+            <td class="sponsor">
+              <a href="http://www.nsf.gov/" rel="external" dir="ltr">
+                <img src="/images/support/NSF_logo_footer-01.png"
+                     alt="National Science Foundation" width="56" />
+              </a>
+            </td>
+            <td class="sponsor">
+              <a href="https://www.google.org/" rel="external" dir="ltr">
+                <img src="/images/support/google.org_dark.png"
+                     alt="Google.org" width="131" />
+              </a>
+            </td>
+            <td class="sponsor">
+              <a href="http://www.moore.org/" rel="external" dir="ltr">
+                <img src="/images/support/Moore_Foundation_logo_footer-01.png"
+                     alt="Moore Foundation" width="100" />
+              </a>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="right">
+        <div id="PhET-logo">
+          <a href="/">
+            <img src="/images/phet-logo-trademarked-black.png" alt="PhET Home Page" title="Go to the PhET home page" style="border: none;"
+                 width="90" id="phet-logo-main-image">
+          </a>
+        </div>
+        <div class="copyright">
+          <a href="/en/licensing">
+            <span>&copy;<span>2019 University of Colorado. </span></span>
+            <br />
+            Some rights reserved.
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+</body>
+</html>
+
